@@ -55,13 +55,13 @@ While recording data the camera was stationary. The optical axis of the camera w
 ## Data preprocessing
 
 To compensate for X-ray detector noise the following prepossessing algorithm was applied:
-<img src="https://latex.codecogs.com/gif.latex?\textrm{preprocessed\_image}_{i,j} = \frac{\textrm{data}_{i,j}-mean(\textrm{dark}_{i,j})}{mean(\textrm{empty}_{i,j})-mean(\textrm{dark}_{i,j})} " />
-where i, j -- pixel coordinates, mean() -- is the mean value of pixels in the given coordinates over the whole subfolder, three subfolders contain the following images:
-+ `dark` -- images taken in absence of X-ray radiation;
-+ `empty` -- images taken in absence of object;
-+ `data` -- images with rotating object.
+<img src="https://latex.codecogs.com/gif.latex?%5Ctextrm%7Bpreprocessed%5C_image%7D_%7Bi%2Cj%7D%20%3D%20%5Cfrac%7B%5Ctextrm%7Bdata%7D_%7Bi%2Cj%7D-mean%28%5Ctextrm%7Bdark%7D_%7Bi%2Cj%7D%29%7D%7Bmean%28%5Ctextrm%7Bempty%7D_%7Bi%2Cj%7D%29-mean%28%5Ctextrm%7Bdark%7D_%7Bi%2Cj%7D%29%7D" />
+where i, j - pixel coordinates, mean() - is the mean value of pixels in the given coordinates over the whole subfolder, three subfolders contain the following images:
++ `dark` - images taken in absence of X-ray radiation;
++ `empty` - images taken in absence of object;
++ `data` - images with rotating object.
 
-Prerocessed images are stored in `xray\textbackslash preprocessed`. See publication to 
+Prerocessed images are stored in `xray/preprocessed`. See publication to 
 
 Due to the Canon EOS 5D Mark III camera limitations object of interest occupies only a small part of visible images. Folder `visible/preprocessed/cropped` contains cropped images of the size 407 x 407 pixels. To make visible and X-ray images comparable the latest were downscaled to the comparable resolution (407 x 360 pixels) in a aspect ratio preserving way (folder `visible/preprocessed/cropped`).
 
