@@ -55,20 +55,19 @@ While recording data the camera was stationary. The optical axis of the camera w
 ## Data preprocessing
 
 To compensate for X-ray detector noise the following prepossessing algorithm was applied:
-$$ \textrm{preprocessed\_image}_{i,j} = \frac{\textrm{data}_{i,j}-mean(\textrm{dark}_{i,j})}{mean(\textrm{empty}_{i,j})-mean(\textrm{dark}_{i,j})} $$
-where $i, j$ -- pixel coordinates, $mean()$ -- is the mean value of pixels in the given coordinates over the whole subfolder, three subfolders contain the following images:
-+ $\texttt{dark}$ -- images taken in absence of X-ray radiation;
-+ $\texttt{empty}$ -- images taken in absence of object;
-+ $\texttt{data}$ -- images with rotating object.
-\end{itemize}    
+<img src="https://latex.codecogs.com/gif.latex?\textrm{preprocessed\_image}_{i,j} = \frac{\textrm{data}_{i,j}-mean(\textrm{dark}_{i,j})}{mean(\textrm{empty}_{i,j})-mean(\textrm{dark}_{i,j})} " />
+where i, j -- pixel coordinates, mean() -- is the mean value of pixels in the given coordinates over the whole subfolder, three subfolders contain the following images:
++ `dark` -- images taken in absence of X-ray radiation;
++ `empty` -- images taken in absence of object;
++ `data` -- images with rotating object.
 
-Prerocessed images are stored in $\texttt{xray\textbackslash preprocessed}$.
+Prerocessed images are stored in `xray\textbackslash preprocessed`. See publication to 
 
-Due to the Canon EOS 5D Mark III camera limitations object of interest occupies only a small part of visible images. Folder $\texttt{visible\textbackslash preprocessed\textbackslash cropped}$ contains cropped images of the size 407 x 407 pixels. To make visible and X-ray images comparable the latest were downscaled to the comparable resolution (407 x 360 pixels) in a aspect ratio preserving way (folder $\texttt{visible\textbackslash preprocessed\textbackslash cropped}$).
+Due to the Canon EOS 5D Mark III camera limitations object of interest occupies only a small part of visible images. Folder `visible/preprocessed/cropped` contains cropped images of the size 407 x 407 pixels. To make visible and X-ray images comparable the latest were downscaled to the comparable resolution (407 x 360 pixels) in a aspect ratio preserving way (folder `visible/preprocessed/cropped`).
 
 ## Calibration
 
-Both parts of the dataset are accompanied by camera calibration parameters. In case of visible data, calibration was performed with the OpenCV toolbox by detecting chessboard pattern. Calibration parameters as well as images used for calibration are stored in $\texttt{visible\textbackslash calib}$ folder. In the case of X-ray data calibration was obtained by the known dimensions of the object were used to estimate camera calibration parameters. The calibration is stored at $\texttt{xray\textbackslash calib}.$
+Both parts of the dataset are accompanied by camera calibration parameters. In case of visible data, calibration was performed with the OpenCV toolbox by detecting chessboard pattern. Calibration parameters as well as images used for calibration are stored in `visible/calib` folder. In the case of X-ray data calibration was obtained by the known dimensions of the object were used to estimate camera calibration parameters. The calibration is stored at `xray/calib`.
 
 ## Download
 
