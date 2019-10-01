@@ -4,8 +4,6 @@ We present the collections of images of the same rotating plastic object made in
 
 Details have been published in: [X-ray and Visible Spectra Circular Motion Images Dataset](https://arxiv.org/abs/1909.13730).
 
-Details have been published in: X-ray and Visible Spectra Circular Motion Images Dataset.
-
 + Images of the same object taken in X-ray and visible spectra.
 + The rotating object images are taken every 0.5 degrees.
 
