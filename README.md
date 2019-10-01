@@ -1,6 +1,6 @@
 # X-ray and Visible Spectra Circular Motion Images Dataset
 
-We present the collections of images of the same rotating plastic object made in X-ray and visible spectra. Both parts of the dataset contain $400$ images. The images are maid every $0.5$ degrees of the object axial rotation. The collection of images is designed for evaluation of the performance of circular motion estimation algorithms as well as for the study of X-ray nature influence on the image analysis algorithms such as keypoints detection and description.  
+We present the collections of images of the same rotating plastic object made in X-ray and visible spectra. Both parts of the dataset contain 400 images. The images are maid every 0.5 degrees of the object axial rotation. The collection of images is designed for evaluation of the performance of circular motion estimation algorithms as well as for the study of X-ray nature influence on the image analysis algorithms such as keypoints detection and description.  
 
 Details have been published in: [X-ray and Visible Spectra Circular Motion Images Dataset](https://arxiv.org/abs/1909.13730).
 
