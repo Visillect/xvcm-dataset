@@ -11,7 +11,7 @@ If you use this dataset, please, cite the appropriate paper.
 
     @misc{chekanov2019xray,
         title={X-ray and Visible Spectra Circular Motion Images Dataset},
-        author={Michai Chekanov and Oleg Shipitko},
+        author={Mikhail Chekanov and Oleg Shipitko},
         year={2019},
         eprint={1909.13730},
         archivePrefix={arXiv},
