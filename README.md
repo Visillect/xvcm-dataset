@@ -62,7 +62,7 @@ where i, j - pixel coordinates, mean() - is the mean value of pixels in the give
 + `empty` - images taken in absence of object;
 + `data` - images with rotating object.
 
-Prerocessed images are stored in `xray/preprocessed`. See publication to 
+Prerocessed images are stored in `xray/preprocessed`. 
 
 Due to the Canon EOS 5D Mark III camera limitations object of interest occupies only a small part of visible images. Folder `visible/preprocessed/cropped` contains cropped images of the size 407 x 407 pixels. To make visible and X-ray images comparable the latest were downscaled to the comparable resolution (407 x 360 pixels) in a aspect ratio preserving way (folder `visible/preprocessed/cropped`).
 
